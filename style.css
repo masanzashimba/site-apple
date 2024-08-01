@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section-one {
+    background-color: #0f0f11;
+    background-size: cover; /* Assure que l'image couvre toute la section */
+    background-position: center; /* Centre l'image dans la section */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le contenu verticalement */
+    padding: 0 40px; /* Ajoute de l'espace à gauche et à droite */
+    color: #ffffff; /* Définit la couleur des textes */
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centre les éléments verticalement */
+    z-index: 20;
+    position: fixed;
+    background-color: #ffffff;
+    color: gray;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px; /* Ajoute un peu de marge intérieure pour le contenu */
+    height: 60px; /* Ajuste la hauteur du header selon vos besoins */
+}
+.search-container {
+    display: flex;
+    align-items: center; /* Centre verticalement l'icône et le champ de recherche */
+    position: relative; /* Positionne l'icône à l'intérieur du conteneur */
+}
+.search-container i {
+    position: absolute;
+    left: 10px; /* Ajuste l'espace entre l'icône et le bord du champ de recherche */
+    color: rgb(203, 202, 202); /* Couleur de l'icône */
+}
+
+header input[type="search"] {
+    padding: 5px 5px 5px 30px; /* Ajoute un espace pour l'icône à gauche */
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(241, 241, 241);
+    outline: none; /* Supprime le contour par défaut du champ de recherche */
+}
+
+
+nav {
+    display: flex;
+    justify-content: center; /* Centre les éléments de la nav */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Espacement entre les éléments */
+}
+
+nav ul li a {
+    text-decoration: none; /* Supprime la sous-ligne des liens */
+    color: gray;
+    font-size: 1em;
+    transition: color 0.3s ease; /* Ajoute une transition douce pour le changement de couleur */
+}
+
+nav ul li a:hover {
+    color: black; /* Change la couleur au survol */
+}
+
+h1, h2 {
+    margin: 0; /* Supprime les marges par défaut des titres */
+}
+
+h2 {
+    font-size: 1em; /* Ajuste la taille des sous-titres */
+    color: gray;
+}
+
+h1 {
+    font-size: 4em; /* Ajuste la taille du titre principal */
+    margin-top: 0.5em; /* Ajoute un peu d'espace au-dessus du titre */
+    margin-bottom: 0.5em; /* Ajoute un peu d'espace en dessous du titre */
+}
+
+button.shop {
+    background-color: #000000; /* Couleur de fond du bouton */
+    border-color: #ffffff;
+    color: #ffffff; /* Couleur du texte du bouton */
+    padding: 10px 60px; /* Ajoute de l'espace autour du texte du bouton */
+    font-size: 1em; /* Ajuste la taille de la police du bouton */
+    cursor: pointer; /* Change le curseur en pointeur lors du survol */
+    border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+    margin-top: 20px; /* Ajoute un espace au-dessus du bouton */
+}
+.position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligne l'image et le texte verticalement au centre */
+    padding: 0 40px; /* Ajoute de l'espace à gauche et à droite */
+}
+
+.position img {
+    max-width: 97%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    flex: 1; /* Permet à l'image de prendre l'espace disponible */
+}
+
+.text {
+    flex: 1; /* Permet au texte de prendre l'espace disponible */
+    max-width: 50%; /* Limite la largeur du texte pour laisser de l'espace pour l'image */
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.first-one{
+width: 50%;
+}
+.first-two{
+    display: flex;
+    width: 50%;
+}
+.first-one-child{
+    display: flex;
+    justify-content: space-between;
+}
+.position::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%; /* Ajustez cette valeur pour contrôler la hauteur du dégradé */
+    background: linear-gradient(to bottom, rgba(15, 15, 17, 0) 0%, rgba(15, 15, 17, 1) 100%);
+    pointer-events: none; /* Assure que le dégradé ne gêne pas les interactions avec les autres éléments */
+    z-index: 0; /* Assure que le dégradé est derrière le texte et l'image */
+}
+
+@media (max-width: 768px) {
+    .position {
+        flex-direction: column; /* Empile l'image et le texte verticalement sur les petits écrans */
+        text-align: center; /* Centre le texte sur les petits écrans */
+    }
+
+    .text, .position img {
+        max-width: 100%; /* Assure que les éléments ne dépassent pas la largeur de leur conteneur */
+        margin-bottom: 20px; /* Ajoute un espace entre l'image et le texte */
+    }
+}
