@@ -1,165 +1,1930 @@
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+header{
+    /* Header Top */
 
-.section-one {
-    background-color: #0f0f11;
-    background-size: cover; /* Assure que l'image couvre toute la section */
-    background-position: center; /* Centre l'image dans la section */
-    height: 100vh;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 16px 160px;
+gap: 32px;
+
+width: 100%;
+height: auto;
+
+/* Main/White */
+background: #FFFFFF;
+border-bottom: 1px solid #B5B5B5;
+
+}
+/* Logo */
+
+/* Auto layout */
+.logo img{
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centre le contenu verticalement */
-    padding: 0 40px; /* Ajoute de l'espace à gauche et à droite */
-    color: #ffffff; /* Définit la couleur des textes */
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    
+    margin: 0 auto;
+    width: 65.4px;
+    height: 22.87px;
+
+    background: #FFFFFF;
+
+    flex: none;
+order: 0;
+flex-grow: 0;
 }
 
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; /* Centre les éléments verticalement */
-    z-index: 20;
-    position: fixed;
-    background-color: #ffffff;
-    color: gray;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0 20px; /* Ajoute un peu de marge intérieure pour le contenu */
-    height: 60px; /* Ajuste la hauteur du header selon vos besoins */
-}
+
+/* Inside auto layout */
+
+
+/* Search Field */
 .search-container {
     display: flex;
-    align-items: center; /* Centre verticalement l'icône et le champ de recherche */
-    position: relative; /* Positionne l'icône à l'intérieur du conteneur */
-}
-.search-container i {
-    position: absolute;
-    left: 10px; /* Ajuste l'espace entre l'icône et le bord du champ de recherche */
-    color: rgb(203, 202, 202); /* Couleur de l'icône */
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    width: 433px;
+    height: 56px;
 }
 
-header input[type="search"] {
-    padding: 5px 5px 5px 30px; /* Ajoute un espace pour l'icône à gauche */
-    border-radius: 5px;
+.search-button {
     border: none;
-    background-color: rgb(241, 241, 241);
-    outline: none; /* Supprime le contour par défaut du champ de recherche */
+    padding: 16px 0 16px 16px;
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+/* Icon/32px/Search */
+button .icon-search{
+    width: 24px;
+    height: 24px;
+    border: none;
+
+    flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.search-input {
+    border: none;
+    padding: 16px 34px 16px 16px;
+    background-color: #F5F5F5;
+    outline: none;
+    width: 398px;
+}
+.navigation{
+    /* Navigation */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 52px;
+
+margin: 0 auto;
+width: 369px;
+height: 19px;
+}
+.navigation__icon:hover{
+color: #000000;
+}
+
+.navigation__icon{
+    /* Contact Us */
+
+width: 86px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-decoration: none;
+
+/* Main/Black */
+color: #878787;
+
+}
+.link__icons{
+    /* Icons */
+
+/* Auto layout */
+display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.icons-Link-Header {
+    display: inline-block;
+    text-decoration: none;
+}
+.icons-Link-Header {
+    display: block;
+    height: auto;
+    color: #878787;
+}
+.icons-Link-Header .coeur {
+   width: 20px;
+   height:17.83px ;
+}
+.icons-Link-Header .panier {
+    width: 24.89px;
+    height:22px ;
+ }
+ .section_one{
+    /* Frame 427319393 */
+/* Frame 427319393 */
+
+width: 100%;
+height: 632px;
+
+background: linear-gradient(90.7deg, #211C24 0.64%, #211C24 101%);
+
+ }
+
+ .banner{
+    /* Banner */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+align-content: flex-start;
+padding: 0px 160px;
+gap: 24px 213px;
+
+
+
+ }
+ .container__img{
+/* Iphone Image */
+
+width: 406px;
+height: 632px;
+
+
+ }
+ .content{
+ /* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 714px;
+min-width: 400px;
+height: 256px;
+
+
+/* Inside auto layout */
+/* flex: none;
+order: 0;
+flex-grow: 1; */
+
+ }
+ .container{
+    /* Frame 427319393 */
+
+width: 100%;
+display: flex;
+height: 632px;
+
+
+/* Inside auto layout */
+/* flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0; */
+
+ }
+
+
+
+
+
+
+
+
+ /* Iphone Image */
+.container__accueil{
+    right: 0px;
+    bottom: 0px;
+}
+
+.container__accueil img{
+
+    margin-left: 55px;
+
+    width: 406px;
+ 
+}
+.titre{
+    /* Titles */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+padding: 162px 88px 0px 88px;
+width: 714px;
+height: 128px;
+
+
+/* Inside auto layout */
+/* flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0; */
+
+}
+h1{/* IPhone 14 Pro */
+
+    width: 714px;
+    height: 72px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 96px;
+    line-height: 72px;
+    /* identical to box height, or 75% */
+    letter-spacing: -0.01em;
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+    .title_pro{
+        font-weight: 700;
+    }
+.btn{
+    /* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 56px;
+gap: 8px;
+background-color: #211C24;
+color: #FFFFFF;
+width: 191px;
+height: 56px;
+
+/* Main/White */
+border: 1px solid #FFFFFF;
+border-radius: 6px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+.text_pro{
+    /* Created to change everything for the better. For everyone */
+
+width: 714px;
+height: 24px;
+margin-bottom: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+color: #919191;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.text_pro_beyond{
+    /* Pro.Beyond. */
+
+width: 714px;
+height: 32px;
+margin-bottom: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 32px;
+/* identical to box height, or 128% */
+
+color: #FFFFFF;
+
+opacity: 0.4;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
 }
 
 
-nav {
+.container-two{
+    /* Smaller Banners */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 1440px;
+height: 600px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+
+.left_banner{
+    /* Left Banners */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+padding: 0px;
+width: 50%;
+height: 600px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+}
+.wide_square{
+    /* Wide Square */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+
+isolation: isolate;
+
+width: 100%;
+height: 328px;
+
+/* Main/White */
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.squares{
+    /* Squares */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 100%;
+height: 272px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.squares_banner{
+    /* Square Banner */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+
+align-items: center;
+padding: 0px 48px 0px 0px;
+isolation: isolate;
+
+width: 50%;
+height: 272px;
+
+background: #EDEDED;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+}
+.wide_square__img{
+    /* PlayStation */
+
+width: 50%;
+
+left: 0px;
+right: 360px;
+top: 0px;
+
+background: url(.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+}
+.wide_square__title{
+    /* Title+Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+padding: 0px;
+gap: 16px;
+
+width: 50%;
+max-width: 404px;
+height: 128px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+z-index: 1;
+
+}
+.playstation{
+    /* Playstation 5 */
+
+width: 100%;
+height: 40px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 49px;
+line-height: 40px;
+/* identical to box height, or 82% */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.playstation_text{
+    /* Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience. */
+
+width: 100%;
+height: 72px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+color: #919191;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.smallers_banner{
+    /* Smaller Banners */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 100%;
+height: 600px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.smallers_banner__title{
+/* Title+Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 160px;
+max-width: 168px;
+height: 143px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+}
+
+.smallers_banner__titre{
+    /* Title+Text */
+    
+    /* Auto layout */
     display: flex;
-    justify-content: center; /* Centre les éléments de la nav */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 8px;
+    
+    width: 160px;
+    max-width: 168px;
+    height: 143px;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+    
+    }
+.max{
+    font-weight: bold;
+}
+.smallers_apple-BLACK{
+    
+width: 160px;
+height: 120px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 29px;
+line-height: 40px;
+/* or 138% */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.smallers_apple{
+    /* Apple AirPods Max */
+
+width: 160px;
+height: 120px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 29px;
+line-height: 40px;
+/* or 138% */
+
+color: #ffffff;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.smallers_text{
+    /* Computational audio. Listen, it's powerful */
+
+width: 160px;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+color: #919191;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.squares_bannerleft{
+    /* Square Banner */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+
+align-items: center;
+padding: 0px 48px 0px 0px;
+isolation: isolate;
+color: #FFFFFF;
+width: 50%;
+height: 272px;
+
+background: #353535;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+}
+.right_banner{
+    /* Big Banner */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 44px 0px 44px 56px;
+gap: 1px;
+isolation: isolate;
+
+width: 50%;
+height: 600px;
+
+background: #EDEDED;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+}
+.right_banner img{
+    /* MacBook Pro 14 */
+width: 100%;
+height: 502px;
+left: calc(50% - 292px/2 + 214px);
+bottom: 49px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+}
+.show{
+    /* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 56px;
+gap: 8px;
+color: #000000;
+width: 191px;
+height: 56px;
+
+/* Main/Black */
+border: 1px solid #000000;
+border-radius: 6px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.right_banner-img{
+    /* MacBook Pro 14 */
+
+
+width: 100%;
+height: 502px;
+left: calc(50% - 292px/2 + 214px);
+bottom: 49px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+}
+.section_two{
+    width: 100%;
+}
+.container_categorie{
+    /* Category */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 80px 100px;
+gap: 32px;
+
+width: 100%;
+height: 352px;
+
+background: #FAFAFA;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.container_categorie-top{
+    /* Top */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 735px;
+
+width: 1120px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.container_categorie-cat{
+    /* Categories */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 1120px;
+height: 128px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.cat{
+    /* Browse By Category */
+
+margin: 0 auto;
+width: 239px;
+height: 32px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+letter-spacing: 0.01em;
+
+/* Main/Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.arrows{
+    /* Arrow`s */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+margin: 0 auto;
+width: 80px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.arrows_left{
+    /* Icon/32px/Arrow */
+
+width: 32px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.arrows_right{
+    /* Icon/32px/Arrow */
+
+width: 32px;
+height: 32px;
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.arrows_right img{
+    /* Icon */
+width: 12.66px;
+height: 23.31px;
+left: 30.21%;
+right: 30.21%;
+top: 13.62%;
+bottom: 13.54%;
+
+/* Main/Black */
+color: #000000;
+
+}
+.arrows_left img{
+    /* Icon */
+left: 30.21%;
+right: 30.21%;
+top: 13.62%;
+bottom: 13.54%;
+width: 12.66px;
+height: 23.31px;
+
+/* Main/Black */
+color: #000000;
+
+}
+.section_three{
+    width: 100%;
+}
+.categorie_card{
+    /* Category Card */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px 52px;
+gap: 8px;
+
+width: 160px;
+min-width: 135px;
+height: 128px;
+
+background: #EDEDED;
+border-radius: 15px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.categorie_card-h{
+    /* Phones */
+
+width: 58px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+text-align: center;
+
+/* Main/Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.svg{
+    /* Icon/Phones */
+text-align: center;
+width: 48px;
+height: 48px;
+text-align: justify;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.section_for{
+/* Products */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 56px 92px;
+gap: 32px;
+
+width: 100%;
+height: 1056px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.discovery{
+    /* Discount Products */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 80px 100px;
+gap: 32px;
+
+width: 100%;
+height: 656px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.tags{
+/* Tags */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+width: 1120px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.tags_text{
+    /* Bestseller */
+
+width: 86px;
+height: 32px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 32px;
+/* identical to box height, or 178% */
+text-align: center;
+
+color: #8B8B8B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.tags_text-one{
+    /* New Arrival */
+
+width: 100px;
+height: 32px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 32px;
+/* identical to box height, or 178% */
+text-align: center;
+
+/* Main/Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.tags_featured{
+    /* Featured Products */
+
+width: 159px;
+height: 32px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 32px;
+/* identical to box height, or 178% */
+
+color: #8B8B8B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+.bars{
+    /* Selected */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+border-bottom: 3px solid black;
+width: 100px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.produit_grid{
+   /* Products Grid */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 1120px;
+height: 880px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+}
+.row{
+    /* Products Grid */
+
+/* Auto layout */
+display: flex;
+
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 100%;
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.row_svg{
+    /* Top Section */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 236px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.product_card{
+    /* Product Card */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 24px 16px;
+gap: 16px;
+
+width: 268px;
+min-width: 200px;
+height: 432px;
+
+background: #F7F7F7;
+border-radius: 9px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+
+
+}
+.product_card img{
+    /* Iphone 14 pro 1 */
+
+width: 160px;
+height: 160px;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.text-icon{
+    /* Text+Icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 236px;
+height: 160px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.btn-buy{
+    /* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 64px;
+gap: 8px;
+color: #FFFFFF;
+width: 188px;
+height: 48px;
+
+/* Main/Black */
+background: #000000;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.text-icon_info{
+    /* Info */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 236px;
+height: 88px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.text-icon__description{
+    /* Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A) */
+
+width: 236px;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+text-align: center;
+
+/* Main/Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.text-icon-price{
+    /* $1399 */
+
+width: 236px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 100% */
+text-align: center;
+letter-spacing: 0.03em;
+
+/* Main/Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.banners{
+display: flex;
+width: 25%;
+flex-direction: column;
+
+}
+.banners img{
+    width: 100%;
+    }
+
+.newhite{
+    background-color: #FFFFFF;
+    padding-bottom: 40px;
+}
+.newgray{
+    background-color: #F9F9F9;
+    padding-bottom: 40px;
+}
+.newcolor{
+    background-color: #EAEAEA;
+    padding-bottom: 40px;
+}
+.newblack{
+    background-color: #2C2C2C;
+    padding-bottom: 40px;
+}
+.black{
+    background-color: #2C2C2C;
 }
 
-nav ul li {
-    margin: 0 20px; /* Espacement entre les éléments */
-}
 
-nav ul li a {
-    text-decoration: none; /* Supprime la sous-ligne des liens */
-    color: gray;
-    font-size: 1em;
-    transition: color 0.3s ease; /* Ajoute une transition douce pour le changement de couleur */
-}
+.big-banners{
 
-nav ul li a:hover {
-    color: black; /* Change la couleur au survol */
-}
 
-h1, h2 {
-    margin: 0; /* Supprime les marges par défaut des titres */
 }
+.picture{
+    /* Group 1 */
 
-h2 {
-    font-size: 1em; /* Ajuste la taille des sous-titres */
-    color: gray;
-}
+position: absolute;
+width: 360.06px;
+height: 327px;
+left: 0px;
+top: 22px;
 
-h1 {
-    font-size: 4em; /* Ajuste la taille du titre principal */
-    margin-top: 0.5em; /* Ajoute un peu d'espace au-dessus du titre */
-    margin-bottom: 0.5em; /* Ajoute un peu d'espace en dessous du titre */
-}
 
-button.shop {
-    background-color: #000000; /* Couleur de fond du bouton */
-    border-color: #ffffff;
-    color: #ffffff; /* Couleur du texte du bouton */
-    padding: 10px 60px; /* Ajoute de l'espace autour du texte du bouton */
-    font-size: 1em; /* Ajuste la taille de la police du bouton */
-    cursor: pointer; /* Change le curseur en pointeur lors du survol */
-    border-radius: 5px; /* Ajoute des coins arrondis au bouton */
-    margin-top: 20px; /* Ajoute un espace au-dessus du bouton */
-}
-.position {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Aligne l'image et le texte verticalement au centre */
-    padding: 0 40px; /* Ajoute de l'espace à gauche et à droite */
-}
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
 
-.position img {
-    max-width: 97%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
-    height: auto; /* Maintient les proportions de l'image */
-    flex: 1; /* Permet à l'image de prendre l'espace disponible */
-}
-
-.text {
-    flex: 1; /* Permet au texte de prendre l'espace disponible */
-    max-width: 50%; /* Limite la largeur du texte pour laisser de l'espace pour l'image */
 }
 .first{
-    display: flex;
-    justify-content: space-between;
+    /* Group 1 */
+
+position: absolute;
+width: 360.06px;
+height: 327px;
+left: 0px;
+top: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
 }
-.flex{
+.banners .seconde{
+    /* Group 1 */
+/* image 12 */
+
+
+width: 80%;
+height: auto;
+}
+.banners .secondary{
+width: 96%;
+height: auto;
+}
+
+.big-banners-titre{
+    /* Title+Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+margin-left: 25px;
+width: 100%;
+height: 208px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+}
+.big-banners-titre_h{
+/* Popular Products */
+
+width: 100%;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 33px;
+line-height: 48px;
+/* identical to box height, or 145% */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.big-banners-titre_p{
+    /* iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use. */
+
+width: 296px;
+height: 72px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+color: #919191;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.section_five{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.btn-view{
+    /* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 56px;
+gap: 8px;
+color: #000000 ;
+
+width: 191px;
+height: 56px;
+background-color: #FFFFFF;
+/* Main/Black */
+border: 1px solid #000000;
+border-radius: 6px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+.btn-view_next{
+    /* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 56px;
+gap: 8px;
+background-color: #353535;
+width: 191px;
+height: 56px;
+color: #ffffff;
+/* Main/White */
+border: 1px solid #FFFFFF;
+border-radius: 6px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.btn-view-black{
+    /* Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 56px;
+gap: 8px;
+color: #ffffff ;
+
+width: 191px;
+height: 56px;
+background-color: #211C24;
+/* Main/Black */
+border: 1px solid #ffffff;
+border-radius: 6px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+.discounts{
+
+    width: 200px;
+    height: 32px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+    text-align: center;
+    
+    /* Main/Black */
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 
-.first-one{
-width: 50%;
-}
-.first-two{
+.last-section {
     display: flex;
-    width: 50%;
-}
-.first-one-child{
-    display: flex;
-    justify-content: space-between;
-}
-.position::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
     width: 100%;
-    height: 50%; /* Ajustez cette valeur pour contrôler la hauteur du dégradé */
-    background: linear-gradient(to bottom, rgba(15, 15, 17, 0) 0%, rgba(15, 15, 17, 1) 100%);
-    pointer-events: none; /* Assure que le dégradé ne gêne pas les interactions avec les autres éléments */
-    z-index: 0; /* Assure que le dégradé est derrière le texte et l'image */
+    height: 448px;
+
+    background: url(images/bgr.jpg) no-repeat center center; /* Centrer l'image */
+    background-size: cover; /* Adapter l'image à la taille de la section */
+    background-position: center; /* Centrer l'image dans la section */
 }
 
-@media (max-width: 768px) {
-    .position {
-        flex-direction: column; /* Empile l'image et le texte verticalement sur les petits écrans */
-        text-align: center; /* Centre le texte sur les petits écrans */
-    }
+footer{
+    /* Footer */
 
-    .text, .position img {
-        max-width: 100%; /* Assure que les éléments ne dépassent pas la largeur de leur conteneur */
-        margin-bottom: 20px; /* Ajoute un espace entre l'image et le texte */
-    }
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 104px 100px;
+gap: 24px;
+
+width: 100%;
+height: 504px;
+
+/* Main/Black */
+background: #000000;
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.footer_info{
+    /* Info */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: flex-start;
+align-content: flex-start;
+padding: 0px;
+gap: 113px;
+
+width: 1120px;
+height: 256px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.footer_socials-icons{
+    /* Social Icons */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 15px;
+
+width: 173px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.footer_info__logo{
+    /* Logo+Text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 384px;
+height: 94.87px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.footer_socials-navigation{
+    /* Footer Navigation */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 623px;
+height: 256px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.logo_footer{
+    /* Logo */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 65.4px;
+height: 22.87px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.footer-text{
+    /* We are a residential interior design firm located in Portland. Our boutique-studio offers more than */
+
+width: 384px;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 170.5%;
+/* or 24px */
+
+color: #CFCFCF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.footer_nav{
+    /* Section */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+margin: 0 auto;
+width: 295.5px;
+height: 256px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.footer-link{
+    /* Section */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+color: #FFFFFF;
+margin: 0 auto;
+width: 295.5px;
+height: 256px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.footer-link_a{
+   /* Bonus program */
+
+width: 295.5px;
+height: 32px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 32px;
+/* identical to box height, or 229% */
+
+color: #CFCFCF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+ 
+}
+.footer_socials-icons svg{
+    /* Icon/16px/Twitter */
+
+margin: 0 auto;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.center{
+    text-align: center;
+}
+.big{
+    /* Big Summer Sale */
+
+height: 72px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 100;
+font-size: 72px;
+line-height: 72px;
+/* identical to box height, or 100% */
+text-align: center;
+letter-spacing: -0.01em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
 }
